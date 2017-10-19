@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-09-27T15:12:08.220">
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/Main.java">
+<violation beginline="11" endline="11" begincolumn="22" endcolumn="25" rule="UnusedLocalVariable" ruleset="Unused Code" package="com.nixsolutions.laboratorysixteen" class="Main" method="main" variable="user" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'user'.
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/dao/RoleDao.java">
+<violation beginline="9" endline="9" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="RoleDao" method="create" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="11" endline="11" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="RoleDao" method="update" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="RoleDao" method="remove" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="44" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="RoleDao" method="findByName" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="42" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="RoleDao" method="findRoleById" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/dao/UserDao.java">
+<violation beginline="9" endline="9" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="create" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="11" endline="11" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="update" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="38" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="remove" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="36" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="findAll" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="46" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="findByLogin" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="46" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="findByEmail" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="42" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="findUserById" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="23" endline="23" begincolumn="16" endcolumn="70" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.dao" class="UserDao" method="isPasswordExist" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/dao/hibernate/HibernateUserDaoImpl.java">
+<violation beginline="13" endline="13" begincolumn="1" endcolumn="77" rule="ImportFromSamePackage" ruleset="Import Statements" package="com.nixsolutions.laboratorysixteen.dao.hibernate" class="HibernateUserDaoImpl" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/service/UserManagementService.java">
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="47" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="findAllUsers" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="12" endline="12" begincolumn="16" endcolumn="52" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="updateUser" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="52" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="createUser" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="52" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="removeUser" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="18" endline="18" begincolumn="16" endcolumn="51" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="getUserModelById" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="20" endline="20" begincolumn="16" endcolumn="41" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="findAllRoles" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="59" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.service" class="UserManagementService" method="getUserModelByLogin" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/validator/Validator.java">
+<violation beginline="9" endline="9" begincolumn="16" endcolumn="82" rule="UnnecessaryModifier" ruleset="Unnecessary" package="com.nixsolutions.laboratorysixteen.validator" class="Validator" method="validate" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="/Users/grigoriy/Documents/workspace/laboratorysixteen/src/main/java/com/nixsolutions/laboratorysixteen/validator/impl/EmailDuplicationValidationRule.java">
+<violation beginline="25" endline="27" begincolumn="33" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic" package="com.nixsolutions.laboratorysixteen.validator.impl" class="EmailDuplicationValidationRule" method="validate" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+</pmd>
