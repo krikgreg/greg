@@ -6,26 +6,32 @@
 <tr>
 	<td>Password</td>
 	<td><form:input path="password" type="password" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="password" class="text-danger"/></td>
 </tr>
 <tr>
 	<td>PasswordAgain</td>
 	<td><form:input path="passwordAgain" type="password" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="passwordAgain" class="text-danger"/></td>
 </tr>
 <tr>
 	<td>E-mail</td>
 	<td><form:input path="email" type="text" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="email" class="text-danger"/></td>
 </tr>
 <tr>
 	<td>First name</td>
 	<td><form:input path="firstName" type="text" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="firstName" class="text-danger"/></td>
 </tr>
 <tr>
 	<td>Last name</td>
 	<td><form:input path="lastName" type="text" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="lastName" class="text-danger"/></td>
 </tr>
 <tr>
 	<td>Birth date</td>
 	<td><form:input path="birthday" type="date" placeholder="yyyy-mm-dd" required="required"/><span class="required">*</span></td>
+	<td><form:errors path="birthday" class="text-danger"/></td>
 </tr>
 <tr>
 					<td>Role</td>

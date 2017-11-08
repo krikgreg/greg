@@ -4,7 +4,7 @@
 <table>
 	<tr>
 		<td><button class="btn btn-primary" type="submit">Submit</button></td>
-		<td><a class="btn btn-primary" href="/laboratorysixteen/admin/listUsers"
+		<td><a class="btn btn-primary" href="/laboratoryseventeen/admin/listUsers"
 			role="button">Cancel</a></td>
 	</tr>
 </table>

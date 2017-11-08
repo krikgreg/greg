@@ -1,6 +1,6 @@
 <dataset>
   <ROLES ID_ROLE="1" NAME="Doe"/>
   <ROLES ID_ROLE="2" NAME="Foo"/>
-  <USERS ID = "1" AGE = "25" Login = "DoeUser" Password = "12345" Email = "DoeUser@gmail.com" FirstName = "Doe" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE="1"/>
-  <USERS ID = "2" AGE = "25" Login = "FooUser" Password = "12345" Email = "DoeUserk@gmail.com" FirstName = "Foo" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE="2"/>
+  <USERS ID = "1" AGE = "25" Login = "DoeUser" Password = "12345" PasswordAgain="12345" Email = "DoeUser@gmail.com" FirstName = "Doe" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE="1"/>
+  <USERS ID = "2" AGE = "25" Login = "FooUser" Password = "12345" PasswordAgain="12345" Email = "DoeUserk@gmail.com" FirstName = "Foo" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE="2"/>
 </dataset>

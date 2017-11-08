@@ -2,9 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <div style="text-align: right;">
-Admin <c:out value = "${CURRENT_USERMODEL.firstName}"/> !
+ 
+Admin <sec:authentication property="principal.firstName" />  !
 (
 <a href="<c:url value="/logout"/>">Logout</a>
 )

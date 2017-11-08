@@ -15,9 +15,9 @@
 </head>
 <body>
 	<header> </header>
-	<div class="container">
-		<jsp:include page="${currentPage}" />
-	</div>
+	<section class="main container">
+		<sitemesh:write property='body' />
+	</section>
 	<footer> </footer>
 </body>
 </html>

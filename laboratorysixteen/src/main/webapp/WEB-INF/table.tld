@@ -11,7 +11,7 @@
 	</description>
 	<tag>
 		<name>table</name>
-		<tag-class>com.nixsolutions.laboratorysixteen.tag.TableTag</tag-class>
+		<tag-class>com.nixsolutions.laboratoryseventeen.tag.TableTag</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
 			<name>users</name>
