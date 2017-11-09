@@ -293,6 +293,5 @@
 			<version>1.7.0RC2</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 </project>

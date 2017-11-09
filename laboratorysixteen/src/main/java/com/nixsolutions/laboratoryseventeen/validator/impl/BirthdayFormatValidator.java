@@ -20,7 +20,7 @@ public class BirthdayFormatValidator implements Validator  {
 	@Override
 	public void validate(Object obj, Errors err) {
 		UserEntity user = (UserEntity) obj;
-		if ( !pattern.matcher(user.getBirthday().trim()).matches()) {
+		if ( !pattern.matcher(user.getBirthday()).matches()) {
 			err.rejectValue("birthday", "Birthday.user.birthday");
 		}
 	}

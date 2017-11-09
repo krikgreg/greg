@@ -4,27 +4,51 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 import org.sitemesh.builder.SiteMeshFilterBuilder;
 import org.sitemesh.config.ConfigurableSiteMeshFilter;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.filter.RequestContextFilter;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
 
 @Configuration
-public class WebAppInitializer implements WebApplicationInitializer {
-
+// @EnableAutoConfiguration
+// @ComponentScan(basePackages = {
+// "com.nixsolutions.laboratoryseventeen"
+// })
+ @EnableWebMvc
+public class WebAppInitializer implements WebApplicationInitializer  {
+//
+//	@Override
+//	protected Class<?>[] getRootConfigClasses() {
+//		return new Class[] { AppConfig.class };
+//	}
+//
+//	@Override
+//	protected Class<?>[] getServletConfigClasses() {
+//		return new Class[] { WebConfig.class, RestTemplate.class, CustomWebSecurityConfigurerAdapter.class };
+//	}
+//
+//	@Override
+//	protected String[] getServletMappings() {
+//		return new String[] { "/" };
+//	}
+	
 	public void onStartup(ServletContext container) {
 		WebApplicationContext ctx = createWebApplicationContext(container);
 		container.addListener(new ContextLoaderListener(ctx));
 		registerFilters(container, ctx);
 		registerSpringMVCDispatcherServlet(container, ctx);
 	}
-	
+
 	private WebApplicationContext createWebApplicationContext(ServletContext container) {
 		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 		ctx.scan("com.nixsolutions.laboratoryseventeen.config");
@@ -32,7 +56,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		ctx.refresh();
 		return ctx;
 	}
-	
+
 	private void registerFilters(ServletContext container, WebApplicationContext ctx) {
 		registerFilter(container, new RequestContextFilter());
 		registerFilter(container, new DelegatingFilterProxy("springSecurityFilterChain"), "springSecurityFilterChain");
@@ -43,19 +67,18 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		String filterName = filterNames.length > 0 ? filterNames[0] : filter.getClass().getSimpleName();
 		container.addFilter(filterName, filter).addMappingForUrlPatterns(null, true, "/*");
 	}
-	
+
 	private void registerSpringMVCDispatcherServlet(ServletContext container, WebApplicationContext ctx) {
 		ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
 		servlet.setLoadOnStartup(1);
 		servlet.addMapping("/");
 	}
-	
+
 	private ConfigurableSiteMeshFilter buildConfigurableSiteMeshFilter() {
 		return new ConfigurableSiteMeshFilter() {
 			@Override
 			protected void applyCustomConfiguration(SiteMeshFilterBuilder builder) {
-				builder
-					.addDecoratorPath("/*", "/WEB-INF/view/page-template.jsp");
+				builder.addDecoratorPath("/*", "/WEB-INF/view/page-template.jsp");
 			}
 		};
 	}
