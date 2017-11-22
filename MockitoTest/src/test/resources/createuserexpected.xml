@@ -1,0 +1,5 @@
+<dataset>
+  <USERS ID = "1" AGE = "25" Login = "DoeUser" Password = "qW#4qw" PasswordAgain="qW#4qw" Email = "DoeUser@gmail.com" FirstName = "Doe" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE = "1"/>
+  <USERS ID = "2" AGE = "25" Login = "FooUser" Password = "qW#4qw" PasswordAgain="qW#4qw" Email = "DoeUserk@gmail.com" FirstName = "Foo" LastName = "DoeSecondName" Birthday = "1992-07-02" ID_ROLE = "2"/>
+  <USERS ID = "3" AGE = "25" Login = "Doe" Password = "qW#4qw" PasswordAgain="qW#4qw" Email = "denbars@mail.com" FirstName = "dfdfb" LastName = "dbrdrv" Birthday = "1992-07-02" ID_ROLE = "1"/>
+</dataset>
